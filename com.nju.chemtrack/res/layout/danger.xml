@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+     <LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="#d43b3b"
+	    android:orientation="horizontal">
+
+	    <ImageView
+	        android:id="@+id/back"
+	        android:layout_width="0dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_height="30dp"
+	        android:layout_weight="0.2"
+	        android:gravity="center"
+	        android:src="@drawable/left"
+	        android:textColor="#ffffff" />
+	
+	    <TextView
+	        android:id="@+id/title"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="50dp"
+	        android:text="危害信息"
+	        android:textColor="#ffffff"
+	        android:textSize="18sp"	        
+	        android:gravity="center"/>
+	    
+	     <ImageView
+	        android:id="@+id/home"
+	        android:visibility="invisible"
+	        android:layout_width="0dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_height="30dp"
+	        android:layout_weight="0.2"
+	        android:gravity="center"
+	        android:src="@drawable/home"
+	        android:textColor="#ffffff" />
+	</LinearLayout>
+
+     <ScrollView
+         android:id="@+id/scrollView1"
+         android:layout_width="match_parent"
+         android:scrollbars="none" 
+         android:layout_height="wrap_content" >
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:paddingTop="10dp"
+             android:orientation="horizontal" >
+
+             <LinearLayout
+                 android:layout_width="wrap_content"
+                 android:layout_height="match_parent"
+                 android:layout_weight="0.3"
+                 android:paddingLeft="10dp"
+                 android:orientation="vertical" >
+
+                 <TextView
+                     android:id="@+id/textView1"
+                     android:layout_width="match_parent"
+                     android:background="@drawable/textview_border"
+                     android:layout_height="40dp"
+                     android:gravity="left|center"
+                     android:text="危险名称" />
+                 
+                 <TextView
+                     android:id="@+id/textView2"
+                     android:layout_width="match_parent"
+                     android:layout_height="40dp"
+                     android:background="@drawable/textview_border"
+                     android:gravity="left|center"
+                     android:text="危险说明代码" />
+                 
+                  <TextView
+                     android:id="@+id/textView3"
+                     android:layout_width="match_parent"
+                     android:layout_height="80dp"
+                     android:background="@drawable/textview_border"
+                     android:gravity="left|center"
+                     android:text="危险说明案文" />
+                  
+                  <TextView
+                     android:id="@+id/textView4"
+                     android:layout_width="match_parent"
+                     android:layout_height="40dp"
+                     android:background="@drawable/textview_border"
+                     android:gravity="left|center"
+                     android:text="危险种类" />
+                  
+                  
+                  <TextView
+                     android:id="@+id/textView5"
+                     android:layout_width="match_parent"
+                     android:layout_height="40dp"
+                     android:background="@drawable/textview_border"
+                     android:gravity="left|center"
+                     android:text="危险种类GHS章节" />
+                  
+                  <TextView
+                     android:id="@+id/textView6"
+                     android:layout_width="match_parent"
+                     android:layout_height="40dp"
+                     android:background="@drawable/textview_border"
+                     android:gravity="left|center"
+                     android:text="危险类别" />
+                  
+                  <TextView
+                     android:id="@+id/textView7"
+                     android:layout_width="match_parent"
+                     android:layout_height="40dp"
+                     android:background="@drawable/textview_border"
+                     android:gravity="left|center"
+                     android:text="信号词" />
+                  
+                  <TextView
+                     android:id="@+id/textView8"
+                     android:layout_width="match_parent"
+                     android:layout_height="100dp"
+                     android:background="@drawable/textview_border"
+                     android:gravity="left|center"
+                     android:text="符号" />
+                  
+                  <TextView
+                     android:id="@+id/textView9"
+                     android:layout_width="match_parent"
+                     android:layout_height="80dp"
+                     android:background="@drawable/textview_border"
+                     android:gravity="left|center"
+                     android:text="防控措施" />
+
+             </LinearLayout>
+             
+               <LinearLayout
+                 android:paddingRight="10dp"
+                 android:layout_width="wrap_content"
+                 android:layout_height="match_parent"
+                 android:layout_weight="0.8"
+                 android:orientation="vertical" >
+                 
+                   
+                 <TextView
+                     android:id="@+id/dangername"
+                     android:layout_width="match_parent"
+                     android:background="@drawable/textview_border"
+                     android:layout_height="40dp"
+                     android:gravity="left|center"
+                     android:text="环境危险" />
+                 
+                 <TextView
+                     android:id="@+id/dangercode"
+                     android:layout_width="match_parent"
+                     android:layout_height="40dp"
+                     android:background="@drawable/textview_border"
+                     android:gravity="left|center"
+                     android:text="H410" />
+                 
+                 <TextView
+                     android:id="@+id/dangercont"
+                     android:layout_width="match_parent"
+                     android:layout_height="80dp"
+                     android:background="@drawable/textview_border"
+                     android:gravity="left|center"
+                     android:text="对水生生物毒性极大并具有长期的持续效应" />
+                 
+                  <TextView
+                     android:id="@+id/dangertype"
+                     android:layout_width="match_parent"
+                     android:layout_height="40dp"
+                     android:background="@drawable/textview_border"
+                     android:gravity="left|center"
+                     android:text="危害水生环境" />
+                
+                 <TextView
+                     android:id="@+id/ghs"
+                     android:layout_width="match_parent"
+                     android:layout_height="40dp"
+                     android:background="@drawable/textview_border"
+                     android:gravity="left|center"
+                     android:text="2.3.2" />
+                 
+                 <TextView
+                     android:id="@+id/dangerclass"
+                     android:layout_width="match_parent"
+                     android:layout_height="40dp"
+                     android:background="@drawable/textview_border"
+                     android:gravity="left|center"
+                     android:text="1" />
+                 
+                  <TextView
+                     android:id="@+id/msgword"
+                     android:layout_width="match_parent"
+                     android:layout_height="40dp"
+                     android:background="@drawable/textview_border"
+                     android:gravity="left|center"
+                     android:text="警告" />
+                  
+                  <ImageView
+                      android:id="@+id/dangerimg"
+                      android:layout_width="match_parent"
+                      android:layout_height="100dp"
+                      android:background="@drawable/textview_border"
+                      android:src="@drawable/exclam" />
+                  
+                   <TextView
+                       android:id="@+id/content"
+                       android:layout_width="match_parent"
+                       android:layout_height="80dp"
+                       android:background="@drawable/textview_border"
+                       android:gravity="left|center"
+                       android:text="略" />
+
+             </LinearLayout>
+
+         </LinearLayout>
+     </ScrollView>
+
+</LinearLayout>

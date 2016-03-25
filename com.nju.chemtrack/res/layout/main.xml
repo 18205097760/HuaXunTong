@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+     <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="40dp"
+            android:visibility="gone"
+            android:background="#ffeeee" >
+
+	     <TextView
+	         android:id="@+id/chinese"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_weight="1"
+	         android:gravity="center" 
+	         android:padding="5dp"
+	         android:textSize="18sp"
+	         android:background="#ff9999"
+	         android:text="中文简体" />
+	     
+	     <TextView
+	         android:id="@+id/egh"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_weight="1"
+	         android:padding="5dp"
+	         android:gravity="center" 
+	         android:textSize="18sp"
+	         android:text="English" />
+
+     </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Search1"
+        android:background="#bbbbbb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"  
+        android:layout_marginTop = "80dp"
+        android:layout_marginBottom = "40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/searchfor1" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="扫描化学品二维码查询" />
+
+    </LinearLayout>
+    
+
+    <LinearLayout
+        android:id="@+id/Search2"
+        android:background="#bbbbbb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"  
+        android:layout_marginBottom = "40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/pencil" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="输入化学品名称查询" />
+
+    </LinearLayout>
+
+    
+    <LinearLayout
+        android:id="@+id/Search3"
+        android:background="#bbbbbb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"  
+        android:layout_marginBottom = "40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/number" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="输入CAS号查询化学品" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="#d43b3b"
+	    android:orientation="horizontal">
+
+	    <ImageView
+	        android:id="@+id/back"
+	        android:layout_width="0dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_height="30dp"
+	        android:layout_weight="0.2"
+	        android:gravity="center"
+	        android:src="@drawable/left"
+	        android:textColor="#ffffff" />
+	
+	    <TextView
+	        android:id="@+id/title"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="50dp"
+	        android:text="提交信息"
+	        android:textColor="#ffffff"
+	        android:textSize="18sp"	        
+	        android:gravity="center"/>
+	    
+	     <ImageView
+	        android:id="@+id/home"
+	        android:visibility="invisible"
+	        android:layout_width="0dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_height="30dp"
+	        android:layout_weight="0.2"
+	        android:gravity="center"
+	        android:src="@drawable/home"
+	        android:textColor="#ffffff" />
+	</LinearLayout>
+    
+     <TextView
+            android:id="@+id/textView2"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:gravity="left|center"
+            android:paddingLeft="10dp"
+            android:textSize="16sp"	
+            android:text="提交报告：" />
+       
+       <LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="5dp"
+	    android:background="@drawable/textview_border"
+	    android:paddingBottom="10dp"
+	    android:orientation="horizontal">
+
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_weight="0.5"
+             android:layout_marginLeft="20dp"
+             android:orientation="vertical" >
+
+             <TextView
+                 android:id="@+id/textView2"
+                 android:layout_width="match_parent"
+                 android:layout_height="48dp"
+                 android:textSize="16sp"	
+                 android:gravity="left|center"
+                 android:text="化学品名称：" />
+             
+             <TextView
+                 android:id="@+id/textView2"
+                 android:layout_width="match_parent"
+                 android:layout_height="48dp"
+                 android:gravity="left|center"
+                 android:textSize="16sp"	
+                 android:text="产 品 批 号：" />
+             
+              <TextView
+                 android:id="@+id/textView2"
+                 android:layout_width="match_parent"
+                 android:layout_height="48dp"
+                 android:gravity="left|center"
+                 android:textSize="16sp"	
+                 android:text="状 态 选 择：" />
+              
+                <TextView
+                 android:id="@+id/textView2"
+                 android:layout_width="match_parent"
+                 android:layout_height="48dp"
+                 android:textSize="16sp"	
+                 android:gravity="left|center"
+                 android:text="备 注 信 息：" />
+
+         </LinearLayout>
+         
+         <LinearLayout
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_weight="0.5"
+             android:orientation="vertical">
+
+             <TextView
+                 android:id="@+id/name"
+                 android:layout_width="match_parent"
+                 android:layout_height="48dp"
+                 android:textSize="16sp"	
+                 android:gravity="left|center"
+                 android:text="苯" />
+             
+             <EditText
+             android:id="@+id/num"
+             android:layout_width="wrap_content"
+             android:layout_height="48dp"
+             android:textSize="16sp"	
+             android:ems="10" /> 
+             
+              <Spinner
+                 android:id="@+id/state"
+                 android:layout_height="48dp"
+                 android:textSize="16sp"	
+                 android:layout_width="wrap_content"/>
+             
+             
+             <EditText
+             android:id="@+id/info"
+             android:layout_width="wrap_content"
+             android:layout_height="48dp"
+             android:textSize="16sp"	
+             android:ems="10" />
+         </LinearLayout>
+     	</LinearLayout>
+     	
+     	 <LinearLayout
+     	     android:id="@+id/GHSclass"
+     	     android:layout_width="match_parent"
+     	     android:layout_height="wrap_content"
+     	     android:background="@drawable/layout_selecter"
+     	     android:clickable="true"
+     	     android:orientation="vertical" >
+
+         <TextView
+           android:id="@+id/submit"
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:background="#d4dbdb"
+           android:layout_margin="5dp"
+           android:gravity="center"
+           android:textSize="20sp"	
+           android:text="提交报告" />
+     	</LinearLayout>
+
+</LinearLayout>

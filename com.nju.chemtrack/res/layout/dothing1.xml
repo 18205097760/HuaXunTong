@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+     <LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="#d43b3b"
+	    android:orientation="horizontal">
+
+	    <ImageView
+	        android:id="@+id/back"
+	        android:layout_width="0dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_height="30dp"
+	        android:layout_weight="0.2"
+	        android:gravity="center"
+	        android:src="@drawable/left"
+	        android:textColor="#ffffff" />
+	
+	    <TextView
+	        android:id="@+id/title"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="50dp"
+	        android:text="危害防护"
+	        android:textColor="#ffffff"
+	        android:textSize="18sp"	        
+	        android:gravity="center"/>
+	    
+	     <ImageView
+	        android:id="@+id/home"
+	        android:visibility="invisible"
+	        android:layout_width="0dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_height="30dp"
+	        android:layout_weight="0.2"
+	        android:gravity="center"
+	        android:src="@drawable/home"
+	        android:textColor="#ffffff" />
+	</LinearLayout>
+
+     <ScrollView
+         android:id="@+id/scrollView1"
+         android:layout_width="match_parent"
+         android:scrollbars="none" 
+         android:layout_height="wrap_content" >
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:padding="10dp"
+             android:orientation="vertical" >
+             
+             <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:text="个人防护"
+                android:background="#dddddd"
+                android:textSize="16sp" />
+
+             <TextView
+                 android:id="@+id/refcont"
+                 android:padding="10dp"
+                 android:textSize="16sp"
+                 android:background="@drawable/textview_border"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="1、呼吸防护：可能接触毒物时，必须佩戴头罩型电动送风过滤式防尘呼吸器；紧急事态抢救或撤离时，建议佩戴自给式呼吸器。\n2、眼睛防护：呼吸系统防护中已作防护。\n3、身体防护：穿连衣式胶布防毒衣，戴橡胶手套。\n4、其他防护：工作现场禁止吸烟、进食和饮水；工作完毕，彻底清洗；单独存放被毒物污染的衣服，洗后备用；车间应配备急救设备及药品；作业人员应学会自救互救。" />
+         
+             <ImageView
+                 android:layout_width="fill_parent"
+                 android:layout_height="10dp"
+                 android:background="#ffffff" />
+             
+             <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:background="#dddddd"
+                android:text="职业暴露风险"
+                android:textSize="16sp" />
+
+             <TextView
+                 android:id="@+id/refcont"
+                 android:padding="10dp"
+                 android:textSize="16sp"
+                 android:background="@drawable/textview_border"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="1、TLV (as CN): 5mg/m³ (皮肤，上限值) (ACGIH 2003)。\n2、MAK (吸入): 2 mg/m³；峰值限制类别:2(1)；妊娠风险组:C；皮肤吸收(H)(DFG 2004)。 " />
+             
+            <ImageView
+                 android:layout_width="fill_parent"
+                 android:layout_height="10dp"
+                 android:background="#ffffff" />
+             
+             <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:background="#dddddd"
+                android:text="储存条件"
+                android:textSize="16sp" />
+
+             <TextView
+                 android:id="@+id/refcont"
+                 android:padding="10dp"
+                 android:textSize="16sp"
+                 android:background="@drawable/textview_border"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="1、包装密封。储存于阴凉、干燥、通风良好的库房，库内相对湿度不超过80%。\n2、远离火种、热源。应与氧化剂、酸类、食用化学品分开存放，切忌混储。\n3、储区应备有合适的材料收容泄漏物。\n4、应严格执行极毒物品“五双”管理制度。" /> 
+          	
+				
+         </LinearLayout>
+     </ScrollView>
+
+</LinearLayout>

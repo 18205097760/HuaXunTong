@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+     <ScrollView
+         android:id="@+id/scrollView1"
+         android:layout_width="match_parent"
+         android:scrollbars="none" 
+         android:layout_height="wrap_content" >
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical"
+             android:padding="10dp" >
+
+             <ImageView
+                 android:id="@+id/imageView1"
+                 android:layout_width="match_parent"
+                 android:layout_height="200dp"
+                 android:src="@drawable/logo" />
+
+             <TextView
+                 android:id="@+id/textView2"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_margin="10dp"
+                 android:gravity="center"
+                 android:text="版本号1.0" />
+
+             <TextView
+                 android:id="@+id/textView1"
+                 android:padding="10dp"
+                 android:textSize="14sp"
+                 android:background="@drawable/textview_border"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:text="\t\t“化讯通”软件是南京大学环境学院依托国家科技部的863计划课题项目（编号：2013AA06A309），联合江苏恒安方信科技有限公司，以自动识别、物联网、数据库、移动互联网等信息技术为基础，借助手机通讯客户端扫描或手动输入化学品身份码和化学品名称，合作开发的一个可以离线查询化学品GHS危险分类信息的手机客户端。\n\t\t此软件查询出来的化学品GHS危险分类信息仅供参考，我们不对此信息承担任何法律责任。有任何问题和建议请与我们联系。\n\n南京大学\n地址：江苏省南京市栖霞区仙林大道163号" />
+
+         </LinearLayout>
+     </ScrollView>
+
+</LinearLayout>

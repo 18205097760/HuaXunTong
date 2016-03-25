@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+     <LinearLayout 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:background="#d43b3b"
+	    android:orientation="horizontal">
+
+	    <ImageView
+	        android:id="@+id/back"
+	        android:layout_width="0dp"
+	        android:layout_marginTop="10dp"
+	        android:layout_height="30dp"
+	        android:layout_weight="0.2"
+	        android:gravity="center"
+	        android:src="@drawable/left"
+	        android:textColor="#ffffff" />
+	
+	    <TextView
+	        android:id="@+id/title"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:layout_height="50dp"
+	        android:text="查询结果"
+	        android:textColor="#ffffff"
+	        android:textSize="18sp"	        
+	        android:gravity="center"/>
+	    
+	    <TextView
+	        android:id="@+id/upload"
+	        android:layout_width="0dp"
+	        android:layout_weight="0.2"
+	        android:layout_height="50dp"
+	        android:text="上传"
+	        android:textColor="#ffffff"
+	        android:textSize="18sp"	        
+	        android:gravity="center"/>
+	</LinearLayout>
+
+     <ScrollView
+         android:id="@+id/scrollView"
+         android:layout_width="match_parent"
+         android:layout_height="match_parent"
+         android:scrollbars="none" >
+
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical" >
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+
+                 <TextView
+                     android:id="@+id/name"
+                     android:layout_width="wrap_content"
+                     android:layout_height="50dp"
+                     android:paddingLeft="15dp"
+                     android:gravity="center"
+                     android:text="1,2,3-三氯代苯"
+                     android:textSize="20sp" />
+             </LinearLayout>
+              
+              <LinearLayout
+                 android:id="@+id/BasicInfo"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:background="@drawable/layout_selecter"
+                 android:clickable="true">
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="50dp"
+                     android:gravity="center"
+                     android:paddingLeft="15dp"
+                     android:text="基本信息"
+                     android:textSize="16sp" />
+             </LinearLayout>
+             
+              <ImageView
+                 android:layout_width="fill_parent"
+                 android:layout_height="2dp"
+                 android:background="#dddddd" />
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:paddingBottom="10dp"
+                 android:paddingLeft="30dp"
+                 android:paddingTop="10dp" >
+
+                 <LinearLayout
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:layout_weight="0.5"
+                     android:orientation="vertical" >
+
+                     <TextView
+                         android:id="@+id/textView2"
+                         android:layout_width="wrap_content"
+                         android:layout_height="20dp"
+                         android:text="物质别名："
+                         android:textSize="14sp" />
+
+                     <TextView
+                         android:id="@+id/textView3"
+                         android:layout_width="wrap_content"
+                         android:layout_height="20dp"
+                         android:text="CAS编号："
+                         android:textSize="14sp" />
+
+                     <TextView
+                         android:id="@+id/textView4"
+                         android:layout_width="wrap_content"
+                         android:layout_height="20dp"
+                         android:text="分 子 式 ："
+                         android:textSize="14sp" />
+
+                     <TextView
+                         android:id="@+id/textView5"
+                         android:layout_width="wrap_content"
+                         android:layout_height="20dp"
+                         android:text="分 子 量 ："
+                         android:textSize="14sp" />
+                 </LinearLayout>
+
+                 <LinearLayout
+                     android:layout_width="wrap_content"
+                     android:layout_height="match_parent"
+                     android:layout_weight="1"
+                     android:orientation="vertical" >
+
+
+                     <TextView
+                         android:id="@+id/otherName"
+                         android:layout_width="wrap_content"
+                         android:layout_height="20dp"
+                         android:text="1,2,3-三氯苯；1,2,6-三氯苯；..."
+                         android:textSize="14sp" />
+
+                     <TextView
+                         android:id="@+id/casNum"
+                         android:layout_width="wrap_content"
+                         android:layout_height="20dp"
+                         android:text="87-61-6"
+                         android:textSize="14sp" />
+
+                     <TextView
+                         android:id="@+id/mol"
+                         android:layout_width="wrap_content"
+                         android:layout_height="20dp"
+                         android:text="C6H3Cl3"
+                         android:textSize="14sp" />
+
+                     <TextView
+                         android:id="@+id/molNum"
+                         android:layout_width="wrap_content"
+                         android:layout_height="20dp"
+                         android:text="181.45"
+                         android:textSize="14sp" />
+                 </LinearLayout>
+             </LinearLayout>
+
+             <ImageView
+                 android:layout_width="fill_parent"
+                 android:layout_height="2dp"
+                 android:background="#dddddd" />
+             
+             <LinearLayout
+                 android:id="@+id/dangerInfo"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:background="@drawable/layout_selecter"
+                 android:clickable="true">
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="50dp"
+                     android:gravity="center"
+                     android:paddingLeft="15dp"
+                     android:text="危险信息"
+                     android:textSize="16sp" />
+             </LinearLayout>
+             
+              <ImageView
+                 android:layout_width="fill_parent"
+                 android:layout_height="2dp"
+                 android:background="#dddddd" />
+
+             <LinearLayout
+                 android:id="@+id/GHSclass"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:background="@drawable/layout_selecter"
+                 android:clickable="true">
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="40dp"
+                     android:gravity="left|center"
+                     android:paddingLeft="30dp"
+                     android:layout_weight="0.8"
+                     android:text="危险分类"
+                     android:textSize="14sp" />
+                 
+                  <ImageView
+                     android:id="@+id/imageView1"
+                     android:layout_width="wrap_content"
+                     android:layout_height="30dp"
+                     android:paddingTop="10dp"
+                     android:layout_weight="0.2"
+                     android:src="@drawable/br_next" />
+             </LinearLayout>
+
+             <ImageView
+                 android:layout_width="fill_parent"
+                 android:layout_height="1dp"
+                 android:background="#dddddd" />
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:paddingRight="10dp"
+                 android:layout_height="wrap_content" >
+
+                 <TextView
+                     android:id="@+id/picto"
+                     android:layout_width="wrap_content"
+                     android:layout_height="40dp"
+                     android:layout_weight="1"
+                     android:gravity="left|center"
+                     android:paddingLeft="30dp"
+                     android:text="象形图"
+                     android:textSize="14sp" />
+
+                 <ImageView
+                     android:id="@+id/imgd1"
+                     android:visibility="gone" 
+                     android:layout_width="30dp"
+                     android:layout_height="30dp"
+                     android:paddingTop="5dp"
+                     android:src="@drawable/exclam" />
+                 
+                  <ImageView
+                     android:id="@+id/imgd2"
+                      android:visibility="gone"                      
+                     android:layout_width="30dp"
+                     android:paddingTop="5dp"
+                     android:layout_height="30dp"
+                     android:src="@drawable/exclam" />
+                  
+                  <ImageView
+                     android:id="@+id/imgd3"
+                       android:visibility="gone"                  
+                     android:layout_width="30dp"
+                     android:layout_height="30dp"
+                     android:paddingTop="5dp"
+                     android:src="@drawable/exclam" />
+                 
+                  <ImageView
+                     android:id="@+id/imgd4"
+                     android:visibility="gone"          
+                     android:layout_width="30dp"
+                     android:paddingTop="5dp"
+                     android:layout_height="30dp"
+                     android:src="@drawable/exclam" />
+                  
+                   <ImageView
+                     android:id="@+id/imgd5"
+                     android:visibility="gone"  
+                     android:layout_width="30dp"
+                     android:paddingTop="5dp"
+                     android:layout_height="30dp"
+                     android:src="@drawable/exclam" />
+
+             </LinearLayout>
+
+             <ImageView
+                 android:layout_width="fill_parent"
+                 android:layout_height="1dp"
+                 android:background="#dddddd" />
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content" >
+
+                 <TextView
+                     android:id="@+id/msgword"
+                     android:layout_width="wrap_content"
+                     android:layout_height="40dp"
+                     android:layout_weight="0.8"
+                     android:gravity="left"
+                     android:paddingLeft="30dp"
+                     android:text="信号词"
+                     android:textSize="14sp" />
+
+                 <TextView
+                     android:id="@+id/msgword"
+                     android:layout_width="wrap_content"
+                     android:layout_height="40dp"
+                     android:layout_weight="0.2"
+                     android:gravity="center"
+                     android:paddingLeft="15dp"
+                     android:text="危险"
+                     android:textSize="14sp" />
+             </LinearLayout>
+
+             <ImageView
+                 android:layout_width="fill_parent"
+                 android:layout_height="2dp"
+                 android:background="#dddddd" />
+
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:id="@+id/measure"
+                 android:background="@drawable/layout_selecter"
+                 android:clickable="true"
+                 android:layout_height="wrap_content" >
+
+                 <TextView
+                     android:id="@+id/t1"
+                     android:layout_width="wrap_content"
+                     android:layout_height="50dp"
+                     android:layout_weight="0.8"
+                     android:gravity="left|center"
+                     android:paddingLeft="15dp"
+                     android:text="防控措施"
+                     android:textSize="16sp" />
+
+             </LinearLayout>
+
+             <ImageView
+                 android:layout_width="fill_parent"
+                 android:layout_height="2dp"
+                 android:background="#dddddd" />
+             
+               <LinearLayout
+                 android:id="@+id/fanghu"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:background="@drawable/layout_selecter"
+                 android:clickable="true">
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="40dp"
+                     android:gravity="left|center"
+                     android:paddingLeft="30dp"
+                      android:layout_weight="0.8"
+                     android:text="危害防护"
+                     android:textSize="14sp" />
+                 
+                  <ImageView
+                     android:id="@+id/imageView1"
+                     android:layout_width="wrap_content"
+                     android:layout_height="30dp"
+                     android:paddingTop="10dp"
+                     android:layout_weight="0.2"
+                     android:src="@drawable/br_next" />
+             </LinearLayout>
+             
+                 <ImageView
+                 android:layout_width="fill_parent"
+                 android:layout_height="1dp"
+                 android:background="#dddddd" />
+             
+                 <LinearLayout
+                 android:id="@+id/jijiu"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:background="@drawable/layout_selecter"
+                 android:clickable="true">
+
+                 <TextView
+                     android:layout_width="wrap_content"
+                     android:layout_height="40dp"
+                     android:gravity="left|center"
+                     android:paddingLeft="30dp"
+                      android:layout_weight="0.8"
+                     android:text="急救措施"
+                     android:textSize="14sp" />
+                 
+                  <ImageView
+                     android:id="@+id/imageView1"
+                     android:layout_width="wrap_content"
+                     android:layout_height="30dp"
+                     android:paddingTop="10dp"
+                     android:layout_weight="0.2"
+                     android:src="@drawable/br_next" />
+             </LinearLayout>
+             
+                     <ImageView
+                 android:layout_width="fill_parent"
+                 android:layout_height="2dp"
+                 android:background="#dddddd" />
+
+             <LinearLayout
+                 android:id="@+id/ref"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                  android:background="@drawable/layout_selecter"
+                 android:clickable="true">
+
+                 <TextView
+                     android:id="@+id/t2"
+                     android:layout_width="wrap_content"
+                     android:layout_height="50dp"
+                     android:layout_weight="0.8"
+                     android:gravity="left|center"
+                     android:paddingLeft="15dp"
+                     android:text="参考资料"
+                     android:textSize="16sp" />
+
+                 <ImageView
+                     android:id="@+id/imageView2"
+                     android:layout_width="wrap_content"
+                     android:layout_height="20dp"
+                     android:layout_marginBottom="15dp"
+                     android:layout_marginTop="15dp"
+                     android:layout_weight="0.2"
+                     android:src="@drawable/br_next" />
+             </LinearLayout>
+
+             <ImageView
+                 android:layout_width="fill_parent"
+                 android:layout_height="2dp"
+                 android:background="#dddddd" />
+
+             <LinearLayout
+                android:id="@+id/company"
+                 android:layout_width="match_parent"
+                  android:background="@drawable/layout_selecter"
+                 android:clickable="true"
+                 android:layout_height="wrap_content" >
+
+                 <TextView
+                     android:id="@+id/t3"
+                     android:layout_width="wrap_content"
+                     android:layout_height="50dp"
+                     android:layout_weight="0.8"
+                     android:gravity="left|center"
+                     android:paddingLeft="15dp"
+                     android:text="生产/使用企业"
+                     android:textSize="16sp" />
+
+                 <ImageView
+                     android:id="@+id/imageView3"
+                     android:layout_width="wrap_content"
+                     android:layout_height="20dp"
+                     android:layout_marginBottom="15dp"
+                     android:layout_marginTop="15dp"
+                     android:layout_weight="0.2"
+                     android:src="@drawable/br_next" />
+             </LinearLayout>
+
+             <ImageView
+                 android:layout_width="fill_parent"
+                 android:layout_height="2dp"
+                 android:background="#dddddd" />
+         </LinearLayout>
+
+     </ScrollView>
+
+</LinearLayout>
